@@ -7,7 +7,7 @@ assignments = [
     list(
         itertools.starmap(
             lambda a, b: set(range(a, b + 1)),
-            [map(int, a.split("-")) for a in pair.split("," "")],
+            [map(int, a.split("-")) for a in pair.split(",")],
         )
     )
     for pair in pairs
